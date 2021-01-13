@@ -4,11 +4,7 @@
     "manifest_version": 2,
     "description": "DLSiteの外観をDarkMode化",
     "icons": {
-        "16": "",
-        "32": "",
-        "48": "",
-        "128": "",
-        "500": ""
+
     },
     "content_scripts": [
         {
@@ -20,7 +16,7 @@
                 "src/js/index.js"
             ],
             "css": [
-                "src/css/home.css"
+                "public/style/home/home.css"
             ]
         },
         {
@@ -32,7 +28,7 @@
                 "src/js/index.js"
             ],
             "css": [
-                "src/css/play.css"
+                "public/style/play/play.css"
             ]
         }
     ]
