@@ -1,21 +1,13 @@
 const className = "dlsite-darkmode";
 
-const fn = () => {
+const main = () => {
     $(".loader").attr('id', 'loader');
     const el = document.getElementById("loader");
-    const ob = new MutationObserver((mutation) => {
-        // 要素が追加されたか?
-        mutation.forEach((m)=>{
-            console.log(m.target);
-            console.log(m.type);
-        });
+    const ob = new MutationObserver((_mutation) => {
 
         if ($("#app")[0]) {
-            console.log('?')
-            // 監視終了
-            ob.disconnect();
-
-            $(".page-content").addClass("dlsite-darkmode");
+            $(".page, .library").find('.page-content').addClass('page-dark');
+            $(".slide-menu").find('.page-content').addClass('slide-menu-dark');
         }
     })
 
@@ -27,5 +19,5 @@ const fn = () => {
     ob.observe(el, config);
 }
 
-fn();
+main();
 
