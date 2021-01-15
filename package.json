@@ -9,9 +9,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-sass": "^4.1.0",
-    "gulp-sass-glob": "^1.1.0"
+    "gulp-sass-glob": "^1.1.0",
+    "webpack": "^5.14.0",
+    "webpack-stream": "^6.1.1"
   }
 }
