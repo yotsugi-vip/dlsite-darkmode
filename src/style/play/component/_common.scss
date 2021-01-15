@@ -1,0 +1,26 @@
+$base-background-color: #242424;
+$content-box-color: #323232;
+$work-name-color: #C9C9C9;
+$maker-name-color: #9E9E9E;
+$svg-color: #888888;
+
+.page-dark {
+    background-color: $base-background-color !important;
+}
+
+.slide-menu-dark {
+    background-color: #353535 !important;
+}
+
+.svg-dark {
+    fill: $svg-color !important;
+}
+
+
+.work-name-dark{
+    color: $work-name-color !important;
+}
+
+.maker-name-dark{
+    color: $maker-name-color !important;
+}
