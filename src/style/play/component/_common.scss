@@ -1,8 +1,4 @@
-$base-background-color: #242424;
-$content-box-color: #323232;
-$work-name-color: #C9C9C9;
-$maker-name-color: #9E9E9E;
-$svg-color: #888888;
+@import './colorVariable';
 
 .page-dark {
     background-color: $base-background-color !important;
@@ -15,7 +11,6 @@ $svg-color: #888888;
 .svg-dark {
     fill: $svg-color !important;
 }
-
 
 .work-name-dark{
     color: $work-name-color !important;

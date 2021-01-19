@@ -35,7 +35,7 @@ const app = () => {
     }
 
     // ログアウトポップアップが表示された場合
-    if ($(".zy-dialog-content")[0]) {
+    if ($('.zy-dialog-wrapper')[0]) {
         playLogOut();
     }
 }
@@ -78,16 +78,33 @@ const playStrage = () => {
 }
 
 const playSetting = () => {
+    // ヘッダー
     $(".page-content .header").addClass("header-dark");
+    $(".page-content .header").addClass("header-word");
+
+    // リスト
     $(".page-content li").addClass("work-dark");
-    $(".work-name").addClass("work-name-dark");
+    $(".page-content li span").addClass("maker-name-dark");
 }
 const playHelp = () => {
-    $("li").addClass("work-dark");
-    $(".work-name").addClass("work-name-dark");
+    // ヘッダー
+    $(".page-content .header").addClass("header-dark");
+    $(".page-content .header").addClass("header-word");
+
+    // リスト
+    $(".page-content li").addClass("work-dark");
+    $(".page-content li").addClass("maker-name-dark");
+    $(".page-content li a").addClass("maker-name-dark");
 }
 
-const playLogOut = () => { 
+const playLogOut = () => {
+    // ヘッダー
+    $(".zy-dialog-header").addClass('logout-header-dark');
+    $(".zy-dialog-header pre").addClass('logout-header-word-dark');
+
+    // フッター
+    $(".zy-dialog-footer").addClass('logout-footer-dark');
+    $(".zy-dialog-footer-button-alt").addClass('logout-footer-word-dark');
 }
 
 export default app;

@@ -3,12 +3,12 @@ import loader from "./loader";
 
 /** メイン */
 const main = () => {
-    $("body").wrapInner('<div id="dlsite-darkmode"></div>');
+    $("body").attr('id', 'dlsite-darkmode');
     const el = document.getElementById("dlsite-darkmode");
     const ob = new MutationObserver((_mutation) => {
 
         if ($("#app")[0]) {
-          app();
+            app();
         }
 
         if ($("#loader")[0]) {

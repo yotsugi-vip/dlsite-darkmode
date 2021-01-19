@@ -12,12 +12,12 @@
                 "https://www.dlsite.com/*"
             ],
             "js": [
-                "public/jquery-3.5.1.min.js",
-                "public/js/home.js"
+                "jquery-3.5.1.min.js",
+                "js/home.js"
                 
             ],
             "css": [
-                "public/style/home/home.css"
+                "style/home/home.css"
             ]
         },
         {
@@ -25,11 +25,11 @@
                 "https://play.dlsite.com/*"
             ],
             "js": [
-                "public/jquery-3.5.1.min.js",
-                "public/js/play.js"
+                "jquery-3.5.1.min.js",
+                "js/play.js"
             ],
             "css": [
-                "public/style/play/play.css"
+                "style/play/play.css"
             ]
         }
     ]
