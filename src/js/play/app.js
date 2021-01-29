@@ -30,7 +30,12 @@ const app = () => {
             playHelp();
             break;
         default:
-            console.log(location.href);
+            const reg = new RegExp("https:\/\/play.dlsite.com\/#\/work\/*.");
+            if (reg.test(location.href)) {
+                playWork();
+            } else {
+                console.log(location.href);
+            }
             break;
     }
 
@@ -105,6 +110,18 @@ const playLogOut = () => {
     // フッター
     $(".zy-dialog-footer").addClass('logout-footer-dark');
     $(".zy-dialog-footer-button-alt").addClass('logout-footer-word-dark');
+}
+
+const playWork = () => {
+    $(".meta-box .work-name").addClass("maker-name-dark");
+    $(".meta-box .maker-name").addClass("link-dark");
+    $(".meta-box a span").addClass("link-dark");
+    $(".workinfo").addClass("work-dark");
+    $(".workinfo .bgimage").addClass("work-dark");
+    $(".workinfo .content-box").addClass("work-dark");
+    $(".tree li").addClass("work-dark");
+    $(".tree li").addClass("maker-name-dark");
+    $(".tree li div").addClass("maker-name-dark");
 }
 
 export default app;
