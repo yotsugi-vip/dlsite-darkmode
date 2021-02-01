@@ -1,0 +1,26 @@
+$base-background-color: #242424;
+$content-box-color: #323232;
+$work-name-color: #c9c9c9;
+$maker-name-color: #9e9e9e;
+$svg-color: #888888;
+
+body {
+    background-color: $base-background-color !important;
+    color: $work-name-color !important;
+
+    a {
+        color: $work-name-color !important;
+    }
+    .headerCore-main div {
+        color: $work-name-color !important;
+        background-color: $content-box-color !important;
+    }
+
+    #left {
+        div,
+        li {
+            color: $work-name-color !important;
+            background-color: $content-box-color !important;
+        }
+    }
+}
