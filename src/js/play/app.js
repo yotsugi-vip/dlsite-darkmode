@@ -129,13 +129,14 @@ const playWork = () => {
     $(".maker-name").addClass("maker-name-dark");
 
     // 作品情報
-    // TODO: リンクで色がおかしいものあり
     $(".meta-box .link_cien").addClass("link-dark");
     $(".meta-box .link_cien a").addClass("link-dark");
     $(".workinfo").addClass("work-dark");
     $(".regist-date").addClass("work-dark");
     $(".workinfo .bgimage").addClass("work-dark");
     $(".workinfo .content-box").addClass("work-dark");
+    $(".tags .tag-class").addClass("word-dark");
+    $(".tags .tag-name").addClass("link-dark");
 
     // tree
     $(".location-path").addClass("work-dark");

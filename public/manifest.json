@@ -3,9 +3,7 @@
     "version": "0.0.0",
     "manifest_version": 2,
     "description": "DLSiteの外観をDarkMode化",
-    "icons": {
-
-    },
+    "icons": {},
     "content_scripts": [
         {
             "matches": [
@@ -14,7 +12,6 @@
             "js": [
                 "jquery-3.5.1.min.js",
                 "js/home.js"
-                
             ],
             "css": [
                 "style/home/home.css"
