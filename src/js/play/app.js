@@ -43,6 +43,16 @@ const app = () => {
     if ($('.zy-dialog-wrapper')[0]) {
         playLogOut();
     }
+
+    // ミニプレイヤー表示
+    if ($(".mini-player")[0]) {
+        MiniPlayer();
+    }
+
+    // プレイヤー全面表示
+    if ($(".audio")[0]) {
+        AudioPlayer();
+    }
 }
 
 const playCommon = () => {
@@ -113,15 +123,52 @@ const playLogOut = () => {
 }
 
 const playWork = () => {
-    $(".meta-box .work-name").addClass("maker-name-dark");
-    $(".meta-box .maker-name").addClass("link-dark");
-    $(".meta-box a span").addClass("link-dark");
+
+    // common
+    $(".work-name").addClass("word-dark");
+    $(".maker-name").addClass("maker-name-dark");
+
+    // 作品情報
+    // TODO: リンクで色がおかしいものあり
+    $(".meta-box .link_cien").addClass("link-dark");
+    $(".meta-box .link_cien a").addClass("link-dark");
     $(".workinfo").addClass("work-dark");
+    $(".regist-date").addClass("work-dark");
     $(".workinfo .bgimage").addClass("work-dark");
     $(".workinfo .content-box").addClass("work-dark");
+
+    // tree
+    $(".location-path").addClass("work-dark");
     $(".tree li").addClass("work-dark");
     $(".tree li").addClass("maker-name-dark");
     $(".tree li div").addClass("maker-name-dark");
+
+    // related products
+    $(".related-products ul li").addClass("work-dark");
+
+}
+
+const MiniPlayer = () => {
+    $(".mini-player").addClass("work-dark");
+    $(".mini-player .play-pause").addClass("work-dark");
+    $(".mini-player .title").addClass("word-dark");
+    $(".mini-player .album").addClass("word-dark");
+}
+
+const AudioPlayer = () => {
+    $(".audio-player .pc").addClass("work-dark");
+    $(".albumart-wrapper").addClass("work-dark");
+
+    // コントロール
+    $(".controls").addClass("work-dark");
+    $(".elapsed-time").addClass("word-dark");
+    $(".remaining-time").addClass("word-dark");
+    $(".title").addClass("word-dark");
+    $(".album").addClass("word-dark");
+    $('.control-buttons')
+        .find('svg').each((i, e) => {
+            $(e).find("path").addClass('svg-dark');
+        });
 }
 
 export default app;
