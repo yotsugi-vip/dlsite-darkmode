@@ -1,25 +1,67 @@
-@import './colorVariable';
+@import "./colorVariable";
 
-.page-dark {
-    background-color: $base-background-color !important;
-}
+.dlsite-darkmode-true {
+    .page-content {
+        background-color: $base-background-color !important;
+        .workinfo {
+            background-color: $content-box-color !important;
+            .content-box {
+                background-color: $content-box-color !important;
+                a {
+                    color: #c9c9c9 !important;
+                }
+                span {
+                    color: #c9c9c9 !important;
+                }
+                .icons {
+                    span {
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+        .work-tree {
+            .location-path {
+                background-color: $content-box-color !important;
+            }
+            .item {
+                background-color: $content-box-color !important;
+                div {
+                    color: #c9c9c9 !important;
+                }
+            }
+        }
+        .related-products {
+            header {
+                color: #c9c9c9 !important;
+            }
+            .item {
+                background-color: $content-box-color !important;
+                span,
+                div {
+                    color: #c9c9c9 !important;
+                }
+            }
+            .icons {
+                span {
+                    color: #fff !important;
+                }
+            }
+        }
+    }
 
-.slide-menu-dark {
-    background-color: #353535 !important;
-}
-
-.svg-dark {
-    fill: $svg-color !important;
-}
-
-.work-name-dark{
-    color: $work-name-color !important;
-}
-
-.maker-name-dark{
-    color: $maker-name-color !important;
-}
-
-.link-dark{
-    color:rgb(134, 255, 255) !important;
+    .slide-menu {
+        background-color: #353535 !important;
+        .page-content {
+            background-color: $base-background-color !important;
+            svg {
+                path {
+                    fill: $svg-color !important;
+                }
+            }
+            span {
+                color: $common-word-color !important;
+            }
+        }
+    }
 }

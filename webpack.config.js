@@ -4,7 +4,7 @@ const input_play = "./src/js/play/index.js";
 
 const mode_dev = "development";
 const mode_pro = "production";
-const webpack_mode = mode_pro;
+const webpack_mode = mode_dev;
 
 const play = {
     mode: webpack_mode,

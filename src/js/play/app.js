@@ -67,6 +67,7 @@ const playCommon = () => {
         .find('.page-content, .pade-bottom')
         .find('span').addClass("word-dark");
 }
+
 const playLibrary = () => {
     $(".work").addClass("work-dark");
     $(".work-name").addClass("work-name-dark");
@@ -74,6 +75,7 @@ const playLibrary = () => {
     $(".icons").find(".icon").addClass("icons-dark");
 
 }
+
 const playMyList = () => {
     $(".list").addClass("work-dark");
     $(".work-name").addClass("work-name-dark");

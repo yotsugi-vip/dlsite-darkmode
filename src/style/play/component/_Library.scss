@@ -1,13 +1,7 @@
 @import "./_common.scss";
 
-.word-dark {
-    color: #888888  !important;
-}
-
-.work-dark {
-    background-color: $content-box-color !important;
-}
-
-.icons-dark{
-    color: #888888 !important;
+.dlsite-darkmode-true {
+    .page-content {
+        background-color: $base-background-color !important;
+    }
 }

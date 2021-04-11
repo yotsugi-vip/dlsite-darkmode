@@ -1,0 +1,19 @@
+@import "./_common.scss";
+
+.dlsite-darkmode-true {
+    .page-content {
+        .list-info {
+            div {
+                color: #c9c9c9 !important;
+            }
+        }
+        .list-work {
+            .item {
+                background-color: $content-box-color !important;
+                div {
+                    color: #c9c9c9 !important;
+                }
+            }
+        }
+    }
+}
