@@ -1,0 +1,12 @@
+@import "./common";
+
+.dlsite-darkmode-true {
+    .photo-viewer {
+        .photo-page-controller {
+            background-color: $content-box-bg !important;
+        }
+        .photo-page-count{
+            color: $main-text-color !important;
+        }
+    }
+}

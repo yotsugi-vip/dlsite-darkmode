@@ -1,5 +1,3 @@
-import app from "./app";
-import loader from "./loader";
 const mode_str_dark = "🌙 ダークモード";
 const mode_str_light = "☀ ライトモード";
 const storageSetting = "dlsite-darkmode";
@@ -21,11 +19,6 @@ const reload = () => {
             $("#app").addClass("dlsite-darkmode-false");
             $("#app").removeClass("dlsite-darkmode-true");
         }
-    }
-
-    if ($("#loader")[0]) {
-        console.log("loading...");
-        loader();
     }
 }
 
@@ -56,8 +49,6 @@ const main = () => {
     $("body").attr('id', 'dlsite-darkmode');
     const el = document.getElementById("dlsite-darkmode");
     const ob = new MutationObserver((_mutation) => {
-        const isDark = localStorage.getItem(storageSetting);
-
         reload();
         addToggleButton();
     })

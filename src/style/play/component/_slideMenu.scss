@@ -1,0 +1,32 @@
+@import "./_common";
+
+.dlsite-darkmode-true {
+    .slide-menu {
+        background-color: $main-bg !important;
+        .page-content {
+            background-color: $main-bg !important;
+
+            .item {
+                svg {
+                    path {
+                        fill: $svg-color !important;
+                    }
+                }
+                span {
+                    color: $main-text-color !important;
+                }
+            }
+
+            .item.is-touch{
+                svg {
+                    path {
+                        fill: #525252 !important;
+                    }
+                }
+                span {
+                    color: #000 !important;
+                }
+            }
+        }
+    }
+}

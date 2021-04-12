@@ -1,0 +1,51 @@
+@import "./common";
+
+.dlsite-darkmode-true {
+    .workinfo {
+        background-color: $content-box-bg !important;
+
+        .work-name {
+            color: $main-text-color !important;
+        }
+
+        .author-name,
+        .maker-name {
+            color: $link-text-color !important;
+        }
+
+        .regist-date {
+            color: $main-text-color !important;
+        }
+    }
+
+    .work-tree {
+        .location-path {
+            background-color: $content-box-bg !important;
+        }
+
+        .tree,
+        .item {
+            background-color: $content-box-bg !important;
+            div {
+                color: $main-text-color !important;
+            }
+        }
+    }
+
+    .related-products {
+        header {
+            color: $main-text-color !important;
+        }
+
+        .works,
+        .item {
+            background-color: $content-box-bg !important;
+            .work-name {
+                color: $main-text-color !important;
+            }
+            .maker-name {
+                color: $sub1-text-color !important;
+            }
+        }
+    }
+}

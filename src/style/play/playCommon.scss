@@ -1,0 +1,11 @@
+@import "./component/common";
+@import "./component/slideMenu";
+@import "./component/work";
+@import "./component/viewer";
+@import "./component/dialog";
+
+.dlsite-darkmode-true {
+    .page-content {
+        background-color: $main-bg !important;
+    }
+}

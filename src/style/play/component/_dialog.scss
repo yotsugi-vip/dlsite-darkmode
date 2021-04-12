@@ -1,0 +1,17 @@
+@import "./common";
+
+.dlsite-darkmode-true {
+    .dialog-container{
+        .dialog-header{
+            background-color: $content-header-bg !important;
+            color: $main-text-color !important;
+        }
+        .dialog-body{
+            background-color: $content-box-bg !important;
+            color: $main-text-color !important;
+            .active{
+                color: #1f9aff !important;
+            }
+        }
+    }
+}
