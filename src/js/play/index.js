@@ -7,17 +7,19 @@ const str2bool = (str) => {
 }
 
 const reload = () => {
-    if ($("#app")[0]) {
+    if ($("#dlsite-darkmode")[0]) {
         const isDark = str2bool(localStorage.getItem(storageSetting));
+        const path = location.hash.split('/')[1];
+        
+        $("#dlsite-darkmode").removeClass();
 
         if (isDark) {
             // ダークモード有効
-            $("#app").addClass("dlsite-darkmode-true");
-            $("#app").removeClass("dlsite-darkmode-false");
+            $("#dlsite-darkmode").addClass("dlsite-darkmode-true");
+            $("#dlsite-darkmode").addClass(`dlsite-darkmode-${path}`);
         } else {
             // ダークモード解除
-            $("#app").addClass("dlsite-darkmode-false");
-            $("#app").removeClass("dlsite-darkmode-true");
+            $("#dlsite-darkmode").addClass("dlsite-darkmode-false");
         }
     }
 }

@@ -26,24 +26,8 @@
                 "js/play.js"
             ],
             "css": [
-                "style/play/playCommon.css"
-            ]
-        },
-        {
-            "matches": [
-                "https://play.dlsite.com/#/library"
-            ],
-            "css": [
                 "style/play/playCommon.css",
-                "style/play/playLibrary.css"
-            ]
-        },
-        {
-            "matches": [
-                "https://play.dlsite.com/#/mylist"
-            ],
-            "css": [
-                "style/play/playCommon.css"
+                "style/play/playMylist.css"
             ]
         }
     ]
