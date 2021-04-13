@@ -2,15 +2,22 @@ const mode_str_dark = "🌙 ダークモード";
 const mode_str_light = "☀ ライトモード";
 const storageSetting = "dlsite-darkmode";
 
+/**
+ * LocalStorage Info
+ * Key  : dlsite-darkmode
+ * val  : true, false
+ * type : string
+ */
+
 const str2bool = (str) => {
     return str == "true" ? true : false;
 }
 
 const reload = () => {
-    if ($("#dlsite-darkmode")[0]) {
+    if ($("#dlsite-darkmode").length) {
         const isDark = str2bool(localStorage.getItem(storageSetting));
         const path = location.hash.split('/')[1];
-        
+
         $("#dlsite-darkmode").removeClass();
 
         if (isDark) {
@@ -21,6 +28,8 @@ const reload = () => {
             // ダークモード解除
             $("#dlsite-darkmode").addClass("dlsite-darkmode-false");
         }
+    } else{
+        console.log("load...");
     }
 }
 
@@ -33,14 +42,14 @@ const addToggleButton = () => {
             storage = localStorage.getItem(storageSetting);
         }
 
-        $('header .right').prepend('<div class="toggle button">val</div>');
+        $('header .title').append('<div class="toggle button">val</div>');
 
         $('.toggle.button').text(str2bool(storage) ? mode_str_dark : mode_str_light);
 
         $('.toggle.button').on("click", () => {
-            let _storage = localStorage.getItem(storageSetting);
-            localStorage.setItem(storageSetting, !(str2bool(_storage)));
-            $('.toggle.button').text(str2bool(_storage) ? mode_str_dark : mode_str_light);
+            let _storage = !str2bool(localStorage.getItem(storageSetting));
+            localStorage.setItem(storageSetting, _storage);
+            $('.toggle.button').text(_storage ? mode_str_dark : mode_str_light);
         });
     }
 }
@@ -51,6 +60,7 @@ const main = () => {
     $("body").attr('id', 'dlsite-darkmode');
     const el = document.getElementById("dlsite-darkmode");
     const ob = new MutationObserver((_mutation) => {
+
         reload();
         addToggleButton();
     })

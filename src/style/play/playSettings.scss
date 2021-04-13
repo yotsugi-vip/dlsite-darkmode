@@ -1,0 +1,29 @@
+@import "./component/common";
+@import "./component/slideMenu";
+@import "./component/dialog";
+
+.dlsite-darkmode-true {
+    &.dlsite-darkmode-settings {
+        section {
+            background-color: $main-bg !important;
+            .header {
+                background-color: $content-header-bg !important;
+                color: $main-text-color !important;
+            }
+            ol li {
+                background-color: $content-box-bg !important;
+                color: $main-text-color !important;
+            }
+
+            ul.works li{
+                background-color: $content-box-bg !important;
+                .work-name{
+                    color: $main-text-color !important;
+                }
+                .maker-name{
+                    color: $sub1-text-color !important;
+                }
+            }
+        }
+    }
+}

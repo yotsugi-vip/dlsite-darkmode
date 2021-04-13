@@ -28,7 +28,10 @@
             "css": [
                 "style/play/playCommon.css",
                 "style/play/playMylist.css",
-                "style/play/playPlaylist.css"
+                "style/play/playPlaylist.css",
+                "style/play/playStorage.css",
+                "style/play/playSettings.css",
+                "style/play/playHelp.css"
             ]
         }
     ]

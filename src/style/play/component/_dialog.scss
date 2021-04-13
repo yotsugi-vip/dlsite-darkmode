@@ -6,7 +6,8 @@
             background-color: $content-header-bg !important;
             color: $main-text-color !important;
         }
-        .dialog-body {
+        .dialog-body,
+        ol li {
             background-color: $content-box-bg !important;
             color: $main-text-color !important;
             .info {
@@ -27,6 +28,30 @@
             svg {
                 path {
                     fill: $svg-color !important;
+                }
+                &.checked {
+                    path {
+                        fill: #1f9aff !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .zy-dialog-content {
+        .zy-dialog-header {
+            background-color: $content-box-bg !important;
+            color: $main-text-color;
+        }
+        .zy-dialog-footer {
+            .zy-dialog-footer-button {
+                &.zy-dialog-footer-button-alt{
+                    background-color: $content-box-bg !important;
+                    color: $main-text-color;
+                }
+                &.zy-dialog-footer-button-main{
+                    background-color: $content-box-bg !important;
+                    color: #1f9aff !important;
                 }
             }
         }

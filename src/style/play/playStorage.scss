@@ -3,5 +3,21 @@
 
 .dlsite-darkmode-true {
     &.dlsite-darkmode-storage {
+        .used-storage {
+            background-color: $content-header-bg !important;
+            color: $main-text-color !important;
+        }
+
+        .list-work.setting li {
+            background-color: $content-box-bg !important;
+            div {
+                color: $main-text-color !important;
+            }
+            svg {
+                path {
+                    fill: $svg-color !important;
+                }
+            }
+        }
     }
 }

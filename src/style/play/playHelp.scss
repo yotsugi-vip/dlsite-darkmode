@@ -1,0 +1,34 @@
+@import "./component/common";
+
+.dlsite-darkmode-true {
+    &.dlsite-darkmode-help {
+        .header {
+            background-color: $content-header-bg !important;
+            color: $main-text-color !important;
+        }
+
+        ol li {
+            background-color: $content-box-bg !important;
+            color: $main-text-color !important;
+            a {
+                color: $main-text-color !important;
+            }
+        }
+
+        .version {
+            color: $sub1-text-color !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        p,
+        pre {
+            color: $main-text-color !important;
+        }
+
+        ul li {
+            color: $main-text-color !important;
+        }
+    }
+}
