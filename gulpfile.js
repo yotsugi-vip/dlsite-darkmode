@@ -10,7 +10,7 @@ const out_scss = "./public/style/";
 const in_scss = "./src/style/**/*.scss";
 const out_js = "./public/js/";
 
-/** SCSSコンパイル */
+/** SASSコンパイル */
 gulp.task('sass', (fn) => {
     gulp.src(in_scss)
         .pipe(glob())
