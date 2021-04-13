@@ -1,7 +1,9 @@
 @import "./component/common";
 
 .dlsite-darkmode-true {
-    .work-item-count span {
-        color: $main-text-color;
+    &.dlsite-darkmode-library {
+        .work-item-count span {
+            color: $main-text-color;
+        }
     }
 }

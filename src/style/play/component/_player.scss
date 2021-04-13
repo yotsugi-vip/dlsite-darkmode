@@ -1,0 +1,42 @@
+@import "./common";
+
+.dlsite-darkmode-true {
+    .mini-player {
+        background-color: $content-box-bg !important;
+        .title {
+            color: $main-text-color !important;
+        }
+        .album {
+            color: $sub1-text-color !important;
+        }
+        .play-pause {
+            svg {
+                path {
+                    fill: $svg-color !important;
+                }
+            }
+        }
+    }
+    .audio-player {
+        background-color: $content-box-bg !important;
+        .controls {
+            background-color: $content-box-bg !important;
+            .elapsed-time,
+            .remaining-time,
+            .title {
+                color: $main-text-color !important;
+            }
+            .album {
+                color: $sub1-text-color !important;
+            }
+            .control-buttons,
+            .volume-wrapper {
+                svg {
+                    path {
+                        fill: $svg-color !important;
+                    }
+                }
+            }
+        }
+    }
+}

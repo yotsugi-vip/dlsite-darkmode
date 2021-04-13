@@ -1,16 +1,33 @@
 @import "./common";
 
 .dlsite-darkmode-true {
-    .dialog-container{
-        .dialog-header{
+    .dialog-container {
+        .dialog-header {
             background-color: $content-header-bg !important;
             color: $main-text-color !important;
         }
-        .dialog-body{
+        .dialog-body {
             background-color: $content-box-bg !important;
             color: $main-text-color !important;
-            .active{
+            .info {
+                .main {
+                    color: $main-text-color !important;
+                }
+                .sub {
+                    color: $sub1-text-color !important;
+                }
+            }
+
+            .active {
                 color: #1f9aff !important;
+            }
+            .is-touch {
+                color: #000 !important;
+            }
+            svg {
+                path {
+                    fill: $svg-color !important;
+                }
             }
         }
     }

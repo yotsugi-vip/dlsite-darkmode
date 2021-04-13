@@ -27,7 +27,8 @@
             ],
             "css": [
                 "style/play/playCommon.css",
-                "style/play/playMylist.css"
+                "style/play/playMylist.css",
+                "style/play/playPlaylist.css"
             ]
         }
     ]

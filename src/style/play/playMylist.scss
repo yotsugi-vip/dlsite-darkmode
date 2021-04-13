@@ -3,22 +3,13 @@
 
 .dlsite-darkmode-true {
     &.dlsite-darkmode-mylist {
-        .list {
+        .list,
+        .list-info {
             background-color: $content-box-bg !important;
             .work-name {
                 color: $main-text-color !important;
             }
             .maker-name {
-                color: $sub1-text-color !important;
-            }
-        }
-
-        .list-info {
-            background-color: $content-box-bg !important;
-            .name {
-                color: $main-text-color !important;
-            }
-            .count {
                 color: $sub1-text-color !important;
             }
         }

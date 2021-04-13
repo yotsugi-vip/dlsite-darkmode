@@ -1,0 +1,32 @@
+@import "./component/common";
+@import "./component/slideMenu";
+@import "./component/player";
+
+.dlsite-darkmode-true {
+    &.dlsite-darkmode-playlist {
+        .list-info {
+            background-color: $content-box-bg !important;
+            .list-name-box {
+                .name {
+                    color: $main-text-color !important;
+                }
+                .count {
+                    color: $sub1-text-color !important;
+                }
+            }
+        }
+
+        .list-work {
+            .list,
+            .item {
+                background-color: $content-box-bg !important;
+                .work-name {
+                    color: $main-text-color !important;
+                }
+                .maker-name {
+                    color: $sub1-text-color !important;
+                }
+            }
+        }
+    }
+}
